@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio - atividade
+    </title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Dhiemyli Henriques</h1>
+            <nav class="nav-list">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#projects">Portfólio</a>
+            </nav>
+        </header>
+<!-- ------------------------------------------------------------------------------------------------ -->
+        <div id="home"></div>
+        <section class="content-box home">
+            <div class="home-esquerda efeito-home-txt">
+                <div class="home-titulo">
+                    <h3>Olá! Me chamo</h3>
+                    <h2>Dhiemyli Henriques</h2>
+                    <h3>E sou <span class="auto-typed"></span></h3>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur deserunt fugiat, autem magni libero, quasi quidem, maxime excepturi facere quo accusamus nesciunt unde iste enim! Mollitia, corrupti eius! Tempora?
+                </p>
+                <div class="icons-home">
+                    <div class="icon-home">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+                    <div class="icon-home">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icon-home">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <button class="btn-home">Download CV</button>
+            </div>
+            <img src="img/dhiemyli.jpeg" class="efeito-home-img" alt="Foto de perfil">
+        </section>
+<!-- ------------------------------------------------------------------------------------------------ -->
+        <div id="about"></div>
+        <section class="content-box about">
+            <div class="about-direita efeito-about-txt">
+                <h2>
+                    Sobre mim <br>
+                    Desenvolvedor FullStack
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, tempore necessitatibus, dicta, quo aspernatur incidunt temporibus et nihil dignissimos laudantium nostrum dolorem est asperiores optio. Iusto iste modi sed illo.
+                </p>
+                <button class="btn-about">Saiba mais</button>
+            </div>
+        </section>
+<!-- ------------------------------------------------------------------------------------------------ -->
+        <section class="content-box services" id="services">
+            <div class="services-superior efeito-services-title">
+                <h2>Meus serviços</h2>
+            </div>
+            <div class="services-inferior">
+                <div class="service-box efeito-service-box1">
+                    <div class="icon-services">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+                    <h3>Design Gráfico</h3>
+                    <p>Figma, UI/UX, Photoshop</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+                <div class="service-box efeito-service-box2">
+                    <div class="icon-services">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>FrontEnd</h3>
+                    <p>Html, Css, React</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+                <div class="service-box efeito-service-box3">
+                    <div class="icon-services">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3>BackEnd</h3>
+                    <p>JavaScript, Python, React</p>
+                    <button class="btn-services">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+<!-- ------------------------------------------------------------------------------------------------ -->
+        <section class="content-box projects" id="projects">
+            <h2 class="efeito-projects-title">Últimos projetos</h2>
+            <div class="projects-superior efeitos-projects-card1">
+                <a href="#">
+                    <img src="img/projeto01.png" alt="Ilustrativa do projeto 1">
+                </a>
+                <a href="#">
+                    <img src="img/projeto02.png" alt="Ilustrativa do projeto 2">
+                </a>
+                <a href="#">
+                    <img src="img/projeto03.png" alt="Ilustrativa do projeto 3">
+                </a>
+            </div>
+            <div class="projects-inferior efeitos-projects-card2">
+                <a href="#">
+                    <img src="img/projeto04.png" alt="Ilustrativa do projeto 4">
+                </a>
+                <a href="#">
+                    <img src="img/projeto05.png" alt="Ilustrativa do projeto 5">
+                </a>
+                <a href="#">
+                    <img src="img/projeto06.png" alt="Ilustrativa do projeto 6">
+                </a>
+            </div>
+        </section>
+<!-- ------------------------------------------------------------------------------------------------ -->
+        <footer>
+            <p>Copyright &#169 Dhiemyli Henriques - Todos os direitos reservados</p>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/df7605eb48.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollanimation.js"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".auto-typed",{
+            strings: ['Desenvolvedor Fullstack.','Desenvolvedor UI/UX.','Analista de dados.'],
+            typeSpeed: 20,
+            backSpeed: 30,
+            loop: true
+        })
+    </script>
+</body>
+</html>

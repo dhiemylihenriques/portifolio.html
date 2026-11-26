@@ -1,0 +1,255 @@
+:root{
+    --blackColor: #000;
+    --darkColor: #1F242D;
+    --grayColor: #2E3640;
+    --whiteColor: #fff;
+    --blueColor: #1B8EF2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+/* --------------------------------------------------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 2.5% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blackColor);
+    color: var(--whiteColor);
+    position: sticky;
+    z-index: 99;
+    top: 0;
+}
+header h1{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.nav-list{
+    display: flex;
+    gap: 25px;
+}
+.nav-list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--whiteColor);
+    transition: .5s;
+}
+.nav-list a:hover{
+    color: var(--blueColor);
+}
+/* --------------------------------------------------------------------------------------------------- */
+.content-box{
+    width: 100%;
+    height: 90vh;
+    padding: 2.5% 5%;
+    background: var(--darkColor);
+    display: flex;
+}
+.about, .projects{
+    background: var(--grayColor);
+}
+.services, .projects{
+    flex-direction: column;
+}
+/* --------------------------------------------------------------------------------------------------- */
+.home-esquerda{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: var(--whiteColor);
+    /* background: var(--blueColor); */
+}
+.home-titulo h2{
+    font-size: 3rem;
+}
+.home-titulo h3{
+    font-size: 2rem;
+}
+.auto-typed{
+    color: var(--blueColor);
+}
+.home-esquerda p{
+    font-size: 1rem;
+}
+.icons-home{
+    display: flex;
+    gap: 15px;
+}
+.icon-home{
+    font-size: 3rem;
+    color: var(--blueColor);
+    cursor: pointer;
+}
+.btn-home{
+    width: 100%;
+    max-width: 210px;
+    padding: 2% .5%;
+    border: none;
+    border-radius: 5px;
+    background: var(--blueColor);
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn-home:hover{
+    transform: scale(1.05);
+}
+/* --------------------------------------------------------------------------------------------------- */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    height: 100%;
+    max-height: 550px;
+    margin-left: 5%;
+    /* background: var(--blueColor); */
+}
+.about-direita{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: var(--whiteColor);
+}
+.about-direita h2{
+    font-size: 3rem;
+}
+.about-direita p{
+    font-size: 1.5rem;
+}
+.btn-about{
+    width: 100%;
+    max-width: 210px;
+    padding: 2% .5%;
+    border: none;
+    border-radius: 5px;
+    background: var(--blueColor);
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn-about:hover{
+    transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--whiteColor);
+}
+.services-superior h2{
+    font-size: 2.5rem;
+}
+.services-inferior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* background: var(--blueColor); */
+    width: 100%;
+    height: 400px;
+}
+.service-box{
+    background: var(--grayColor);
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-box h3{
+    font-size: 2rem;
+}
+.service-box p{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.icon-services{
+    font-size: 7rem;
+    color: var(--blueColor);
+}
+.btn-services{
+    width: 100%;
+    max-width: 150px;
+    margin-top: 20px;
+    padding: 2% .5%;
+    border: none;
+    border-radius: 50px;
+    background: var(--blueColor);
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 1px 20px rgb(27, 142, 242);
+    transition: .5s;
+    cursor: pointer;
+}
+.btn-services:hover{
+    transform: scale(1.05);
+}
+/* --------------------------------------------------------------------------------------------------- */
+.projects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--whiteColor);
+}
+.projects h2{
+    font-size: 2.5rem;
+    margin-bottom: 2.5%;
+}
+.projects-superior, .projects-inferior{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.projects-superior img, .projects-inferior img{
+    width: 100%;
+    max-width: 280px;
+    transition: .5s;
+}
+.projects-superior img:hover, .projects-inferior img:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 100px rgb(27, 142, 242);
+}
+/* --------------------------------------------------------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 15vh;
+    padding: 2.5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--darkColor);
+    color: var(--whiteColor);
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* ANIMAÇÕES */
+.efeito-home-txt, .efeito-home-img, .efeito-about-txt, .efeito-about-img, .efeito-services-title, .efeito-projects-title, .efeitos-projects-card1, .efeitos-projects-card2, .efeito-service-box1, .efeito-service-box2, .efeito-service-box3{
+    visibility: hidden;
+}
+/* --------------------------------------------------------------------------------------------------- */
